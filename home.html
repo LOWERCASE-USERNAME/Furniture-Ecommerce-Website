@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.27thSeptember</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,800;1,200;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styleindex.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light header">
+        <div class="header-logo">
+            .27thSeptember
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <div class="header-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><i class="fa-solid fa-house"></i><a href="home.html">Home</a></li>
+                    <li class="nav-item"><i class="fa-solid fa-store"></i><a href="shop.html">Shop</a></li>
+                    <li class="nav-item"><i class="fa-solid fa-circle-question"></i><a href="">About Us</a></li>
+                    <li class="nav-item"><i class="fa-solid fa-phone"></i><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <hr>
+            <div class="header-searchbar">
+                <div class="searchbar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <button id="search">Search</button>
+            </div>
+            <hr>
+            <div class="header-functionality">
+                <!-- <div class="header-searchbar"><i class="fa-solid fa-magnifying-glass"></i>Search</div> -->
+                <div class="header-cart">
+                    <div class="counter">0</div>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <a href="cart.html">Cart</a>
+                </div>
+                <div class="account dropright dropdown-menu-md-left"><i class="fa-solid fa-user-astronaut"></i>User #</div>
+            </div>
+        </div>
+    </nav>
+    <div class="banner">
+        <div class="banner-box-cate">
+            <div class="box-content">
+                <div id="collections-name">Summer 2023 Collections</div>
+                <div id="collections-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, omnis.
+                </div>
+                <button class="banner-btn btn-push">Shop Now</button>
+            </div>
+            <!-- <img src="collection.jpg" alt="" style="width: 100%; z-index: -1;"> -->
+        </div>
+        <div class="banner-box-cate" style="background-color: #A6D0DD;">
+            <div class="box-content">
+                <div class="cate-name">Decoration</div>
+                <div class="cate-desc">??? in store</div>
+                <button class="banner-btn btn-push">Shop Now</button>
+            </div>
+            <img src="images/img-3.jpg" alt="">
+        </div>
+        <div class="banner-box-cate" style="background-color: #FFD3B0;">
+            <div id="login-box">
+                <div id="login">Login</div>
+                <div id="signup">Signup if you don't have an account</div>
+            </div>
+        </div>
+        <div class="banner-box-cate" style="background-color: #FF6969;">
+            <div class="box-content">
+                <div class="cate-name">Furniture</div>
+                <div class="cate-desc">??? in store</div>
+                <button class="banner-btn btn-push">Shop Now</button>
+            </div>
+            <img src="images/img-4.jpg" alt="">
+        </div>
+        <div class="banner-box-cate" style="background-color: #FFF9DE;">
+            <div class="box-content">
+                <div class="cate-name">Storage</div>
+                <div class="cate-desc">??? in store</div>
+                <button class="banner-btn btn-push">Shop Now</button>
+            </div>
+            <img src="images/img-5.jpg" alt="">
+        </div>
+    </div>
+    <!-- <img src="banner-2.jpg" alt="" style="width: 100%; clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);"> -->
+    <h2 class="text-center content-header">Best Sellers</h2>
+    <div class="best-seller content ">
+        <div class="left arrow"><i class="fa-solid fa-arrow-left icon-center"></i></div>
+        <div class="item-container" on...="createProductBox(this)">
+        </div>
+        <div class="right arrow"><i class="fa-solid fa-arrow-right icon-center"></i></div>
+    </div>
+    <h2 class="text-center content-header">New Arrivals</h2>
+    <div class="new-arrivals content">
+        <div class="left arrow"><i class="fa-solid fa-arrow-left icon-center"></i></div>
+        <div class="item-container" on...="createProductBox(this)">
+        </div>
+        <div class="right arrow"><i class="fa-solid fa-arrow-right icon-center"></i></div>
+    </div>
+    <h2 class="text-center content-header">Sales</h2>
+    <div class="sales content">
+        <div class="left arrow"><i class="fa-solid fa-arrow-left icon-center"></i></div>
+        <div class="item-container" on...="createProductBox(this)">
+        </div>
+        <div class="right arrow"><i class="fa-solid fa-arrow-right icon-center"></i></div>
+    </div>
+
+
+
+
+
+    <!-- login layout -->
+    <div class="layout" id="login-layout" style="display: none;">
+        <form action="" id="login-form">
+            <h3>Login</h3>
+            <div class="input-box">
+                <input type="email" placeholder="Enter your email" name="login-email" id="login-email" required>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Enter your password" name="login-pw" id="login-pw" required>
+                <i class="fa-solid fa-lock-open"></i>
+            </div>
+            <div class="option-field">
+                <input type="checkbox" name="remember" id="rem-box">
+                <label for="rem-box">Remember me</label>
+                <a href="#" id="forgot_pw">Forgot your password?</a>
+            </div>
+            <div class="submit btn-push">
+                <input type="submit" value="Login Now">
+                <i class="fa-regular fa-paper-plane"></i>
+            </div>
+            <div class="signup-login">Don't have an account? <span>Sign up now</span></div>
+        </form>
+        <form action="" id="register-form">
+            <h3>Register</h3>
+            <div class="input-box">
+                <input type="email" placeholder="Enter your email" name="reg-email" id="reg-email" required>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Enter your password" name="reg-pw" id="reg-pw" required>
+                <i class="fa-solid fa-lock-open"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Confirm your password" name="reg-conf-pw" id="reg-conf-pw" required>
+                <i class="fa-solid fa-lock-open"></i>
+            </div>
+            <div class="option-field">
+                <input type="checkbox" name="term" id="term">
+                <label for="term">I have read and agree to <a href="#">Terms and Conditions</a></label>
+            </div>
+            <div class="submit btn-push">
+                <input type="submit" value="Register">
+                <i class="fa-regular fa-paper-plane"></i>
+            </div>
+            <div class="signup-login">Already have an account? <span>Login here</span></div>
+        </form>
+    </div>
+
+
+    <div class="layout product-card">
+        <div class="card-image">
+            <img id="main-image" src="" alt="">
+            <div class="secondary-container">
+                <div class="secondary-image">
+                    <img src="" alt="">
+                    <div class="view">Viewing</div>
+                </div>
+                <div class="secondary-image">
+                    <img src="" alt="">
+                    <div>Viewing</div>
+                </div>
+                <div class="secondary-image">
+                    <img src="" alt="">
+                    <div>Viewing</div>
+                </div>
+                <div class="secondary-image">
+                    <img src="" alt="">
+                    <div>Viewing</div>
+                </div>
+            </div>
+        </div>
+        <form class="card-info">
+            <button class="exit card-exit btn-push">
+                <div class="line"></div>
+                <div class="line"></div>
+            </button>
+            <div class="card-group" style="justify-content: flex-start; align-items: center;">
+                <span class="card-tag"></span>
+                <h4 class="card-name"></h4>
+            </div>
+            <div class="card-wish wishlist"><i class="fa-solid fa-heart"></i></div>
+            <div class="card-rating"></div>
+            <div class="card-group">
+                <div id="card-price" class="card-price">Price: <p>$</p>
+                </div>
+                <div class="card-quantity">
+                    <span>Quantity:</span>
+                    <div class="qty-slider">
+                        <button class="qty-btn" id="decrease">-</button>
+                        <input id="qty" value="1" type="text" name="qty" pattern="\d+" min="1">
+                        <button class="qty-btn" id="increase">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <details class="card-header" open>
+                <summary>Product Info</summary>
+                <div class="card-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas saepe, aliquam
+                    libero expedita error ut ipsum nostrum? Laboriosam vero voluptatibus, nesciunt tempore nihil eos
+                    nisi enim modi aut esse temporibus.</div>
+            </details>
+            <div class="card-group" id="btn-price-group">
+                <button class="card-btn btn-push">
+                    <i class="fa-solid fa-cart-shopping"></i>ADD TO CART
+                </button>
+                <div id="card-total-price" class="card-price">Total Price: <p>$</p>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+    <script src="js/script.js" type="module"></script>
+    
+    <!-- <script src="js/scriptCart.js" type="module"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1d7268affb.js" crossorigin="anonymous"></script>
+    
+</body>
+
+</html>

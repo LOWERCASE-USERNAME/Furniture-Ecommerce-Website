@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.27thSeptember Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,800;1,200;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styleheader.css">
+    <link rel="stylesheet" href="css/stylecart.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light header">
+        <div class="header-logo">
+            .27thSeptember
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <div class="header-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><i class="fa-solid fa-house"></i><a href="home.html">Home</a></li>
+                    <li class="nav-item"><i class="fa-solid fa-store"></i><a href="">Shop</a></li>
+                    <li class="nav-item"><i class="fa-solid fa-circle-question"></i><a href="">About Us</a></li>
+                    <li class="nav-item"><i class="fa-solid fa-phone"></i><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <hr>
+            <div class="header-searchbar">
+                <div class="searchbar">
+                    <i class="fa-solid fa-magnifying-glass" onclick="displaySearch()"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <button id="search">Search</button>
+            </div>
+            <hr>
+            <div class="header-functionality">
+
+                <div class="account"><i class="fa-solid fa-user-astronaut"></i>User #</div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="left content col-md-8">
+                <div id="backToHome">
+                    <a href="home.html">Continue Shopping</a>
+                </div>
+                <div id="cart-item-container" onclick="">
+
+                </div>
+            </div>
+            <div class="right checkout col-md-4">
+                <h4>Checkout Details</h4>
+                <div class="cccard-type">
+                    We accept card type <br>
+                    <i class="fa fa-cc-amex"></i>
+                    <i class="fa fa-cc-mastercard"></i>
+                    <i class="fa-brands fa-cc-paypal"></i>
+                    <i class="fa fa-cc-visa"></i>
+                </div>
+                <div class="creditcard-info">
+                    <div class="cc-input">
+                        <input id="customername" type="text" placeholder="Cardholder's name">
+                    <label for="customername">Cardholder's name</label>
+                    </div>
+                    <div class="cc-input">
+                        <input id="cardnum" type="text" placeholder="0123 456 789">
+                        <label for="cardnum">Card number</label>
+                    </div>
+                    <div class="cc-input">
+                        <input id="exp" type="text" placeholder="MM/YYYY">
+                        <label for="exp">Expiration's Date</label>
+                    </div>
+                    <div class="cc-input">
+                        <input id="pwd" type="password" placeholder="&#8226&#8226&#8226">
+                        <label for="pwd">CCV</label>
+                    </div>
+                </div>
+                <div class="totalPrice">
+                    <span>Total: </span>
+                    <span class="price">$0</span>
+                </div>
+                <button>CHECKOUT</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/scriptCart.js" type="module" defer></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1d7268affb.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

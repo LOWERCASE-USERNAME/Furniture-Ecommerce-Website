@@ -1,0 +1,124 @@
+@keyframes collapse {
+    from {
+        opacity: 1;
+        top: 0;
+    }
+
+    to {
+        opacity: 0;
+        /* top: -80px; */
+    }
+}
+
+@keyframes open {
+    from {
+        opacity: 0;
+        /* top: -80px; */
+    }
+
+    to {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+.collapse-scroll{
+    animation: collapse .2s ease forwards;
+}
+.open-scroll{
+    animation: open .2s ease forwards;
+}
+body {
+    font-family: 'Nunito', sans-serif;
+    /* position: relative; */
+}
+
+i {
+    margin-right: 5px;
+}
+
+.icon-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.header {
+    display: flex;
+    align-items: center;
+    font-size: 110%;
+    position: sticky;
+    top: 0;
+    z-index: 101;
+    /* height: 80px; */
+    background-color: white;
+}
+
+.header-logo {
+    font-size: 200%;
+    background: -webkit-linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+button.navbar-toggler span {
+    color: black;
+}
+
+.header-nav {
+    width: 40%;
+    margin-left: 5%;
+}
+
+.header-nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.header-nav li {
+    margin-right: 2%;
+}
+
+.header-nav ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.header-searchbar {
+    display: flex;
+    margin-left: 100px;
+    width: 30%;
+    align-items: center;
+    transition: 0.5s ease;
+    
+}
+
+.searchbar {
+    width: 27px;
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 15px;
+    position: relative;
+    box-sizing: content-box;
+    transition: width 0.5s ease;
+}
+
+.searchbar input {
+    width: 0;
+    height: 24px;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    transition: width 0.5s ease;
+}
+.searchbar i{
+    line-height: 24px;
+}
+ 
+#search{
+    background-color: transparent;
+    border: none;
+}

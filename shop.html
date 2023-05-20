@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.27thSeptember Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,800;1,200;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styleheader.css">
+    <link rel="stylesheet" href="css/styleshop.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light header">
+        <div class="header-logo">
+            .27thSeptember
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <div class="header-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><i class="fa-solid fa-house"></i><a href="home.html">Home</a></li>
+                    <li class="nav-item"><i class="fa-solid fa-store"></i><a href="">Shop</a></li>
+                    <li class="nav-item"><i class="fa-solid fa-circle-question"></i><a href="">About Us</a></li>
+                    <li class="nav-item"><i class="fa-solid fa-phone"></i><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- <hr>
+            <div class="header-searchbar">
+                <div class="searchbar">
+                    <i class="fa-solid fa-magnifying-glass" onclick="displaySearch()"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <button id="search">Search</button>
+            </div>
+            <hr> -->
+            <div class="header-functionality">
+
+                <div class="account"><i class="fa-solid fa-user-astronaut"></i>User #</div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <form action="">
+                    <fieldset id="Category-field">
+                        <legend>Category</legend>
+                        <input type="radio" name="catalog" id="furniture">
+                        <label for="furniture">Furniture</label>
+                        <br>
+                        <input type="radio" name="catalog" id="decoration">
+                        <label for="decoration">Decoration</label>
+                        <br>
+                        <input type="radio" name="catalog" id="storage">
+                        <label for="storage">Storage</label>
+                    </fieldset>
+                    <fieldset id="Color-field">
+                        <legend>Color</legend>
+                        <div class="colorField">
+                            <div class="colorPicker" id="white"
+                                style="background-color: #ffffff; background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);">
+                            </div>
+                            <div class="colorPicker" id="black"
+                                style="background-color: #000000; background-image: linear-gradient(147deg, #000000 0%, #434343 74%);">
+                            </div>
+                            <div class="colorPicker" id="brown"
+                                style="background-color: #772f1a; background-image: linear-gradient(315deg, #772f1a 0%, #f2a65a 74%);">
+                            </div>
+                            <div class="colorPicker" id="silver"
+                                style="background-color: #bdd4e7;background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);">
+                            </div>
+                            <div class="colorPicker" id="red"
+                                style="background-color: #feae96; background-image: linear-gradient(315deg, #feae96 0%, #fe0944 74%);">
+                            </div>
+                            <div class="colorPicker" id="green"
+                                style="background-color: #20bf55; background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Price Range</legend>
+                        <div class="wrapper">
+                            <div class="price-input">
+                                <div class="field">
+                                    <span>Min</span>
+                                    <input type="number" class="input-min" value="0">
+                                </div>
+                                <div class="separator">-</div>
+                                <div class="field">
+                                    <span>Max</span>
+                                    <input type="number" class="input-max" value="1000">
+                                </div>
+                            </div>
+                            <div class="slider">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="range-input">
+                                <input type="range" class="range-min" min="0" max="1000" value="0" step="50">
+                                <input type="range" class="range-max" min="0" max="1000" value="1000" step="50">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="search-btn">
+                        <input type="button" value="Search">
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="item-container col-md-9">
+            </div>
+        </div>
+    </div>
+
+    <script src="js/scriptShop.js" type="module"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1d7268affb.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
